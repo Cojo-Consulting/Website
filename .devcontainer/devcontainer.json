@@ -1,0 +1,28 @@
+{
+  "name": "cojo-consulting-website",
+  "image": "node:20-bookworm",
+
+  "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind,consistency=cached",
+  "workspaceFolder": "${localWorkspaceFolder}",
+
+  "mounts": [
+    "source=${localEnv:HOME}/.claude,target=${localEnv:HOME}/.claude,type=bind,consistency=cached"
+  ],
+
+  "forwardPorts": [8085],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code"
+      ],
+      "settings": {
+        "claudeCode.initialPermissionMode": "plan",
+        "claudeCode.preferredLocation": "panel",
+        "claudeCode.useCtrlEnterToSend": true
+      }
+    }
+  },
+
+  "postCreateCommand": "npm install && npx eleventy --serve --port=8085"
+}
