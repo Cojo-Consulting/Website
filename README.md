@@ -45,16 +45,4 @@ Custom domains on GitHub Pages require the repository to be **public** on the fr
 
 ### DNS
 
-At your domain registrar, point `cojo-consulting.ch` at GitHub Pages:
-
-- `A` records for the apex domain to GitHub's Pages IPs (185.199.108.153, 185.199.109.153,
-  185.199.110.153, 185.199.111.153), or an `ALIAS`/`ANAME` record if your registrar supports it.
-- Optionally a `CNAME` record for `www` pointing to `<your-github-username>.github.io`.
-
-## Outstanding handoff items
-
-These are placeholders in the current scaffold that need real content before launch:
-
-- [ ] Final, legally reviewed Impressum and Datenschutz text.
-- [ ] DNS records for `cojo-consulting.ch` pointed at GitHub Pages (see above).
-- [ ] Confirm the GitHub repository can be public (required for a free-plan custom domain).
+For a custom domain see [GitHub Pages Doc](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
