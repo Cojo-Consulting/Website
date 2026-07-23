@@ -2,8 +2,10 @@
 layout: base.njk
 title: Kontakt - Beratungstermin vereinbaren
 description: Vereinbare jetzt Dein unverbindliches Beratungsgespräch zu Versicherungsberatung, Finanzberatung oder Vorsorgeberatung in Hergiswil NW.
+preconnectJotform: true
 ---
 <section class="hero hero--page">
+  <div class="hero__pattern" aria-hidden="true"></div>
   <div class="container">
     <h1>Kontakt</h1>
     <p>Gemeinsam für Deine finanzielle Sicherheit.</p>
@@ -51,6 +53,7 @@ description: Vereinbare jetzt Dein unverbindliches Beratungsgespräch zu Versich
             allowtransparency="true"
             allow="geolocation; microphone; camera; fullscreen; payment"
             src="https://form.jotform.com/262025597165360"
+            fetchpriority="high"
             frameborder="0"
             style="min-width:100%;max-width:100%;height:540px;border:none;"
             scrolling="no">
