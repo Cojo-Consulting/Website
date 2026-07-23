@@ -1,6 +1,6 @@
 {
   "name": "cojo-consulting-website",
-  "image": "node:20-bookworm",
+  "image": "node:24-bookworm",
 
   "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind,consistency=cached",
   "workspaceFolder": "${localWorkspaceFolder}",

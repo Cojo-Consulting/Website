@@ -6,7 +6,7 @@ GitHub Pages under the custom domain `cojo-consulting.ch`.
 ## Development
 
 This project uses a devcontainer
-(`.devcontainer/devcontainer.json`, `node:20-bookworm`) for local development — open the folder in
+(`.devcontainer/devcontainer.json`) for local development — open the folder in
 VS Code and "Reopen in Container", or use the [devcontainer CLI](https://github.com/devcontainers/cli).
 The container mounts the workspace and `~/.claude` at the same absolute path as on the host, so
 Claude Code sessions started outside the container can be resumed inside it.
@@ -31,8 +31,8 @@ src/
   leistungen.njk   # Leistungen
   ueber-mich.njk   # Über Mich
   kontakt.njk      # Kontakt (Jotform embed)
-  impressum.njk    # Impressum (placeholder legal text)
-  datenschutz.njk  # Datenschutz (placeholder legal text)
+  impressum.njk    # Impressum
+  datenschutz.njk  # Datenschutz
   CNAME            # custom domain for GitHub Pages
 ```
 

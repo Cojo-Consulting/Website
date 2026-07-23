@@ -1,0 +1,15 @@
+{
+  "url": "https://cojo-consulting.ch",
+  "name": "Cojo Consulting GmbH",
+  "phone": "+41 79 935 65 06",
+  "email": "info@cojo-consulting.ch",
+  "address": {
+    "street": "Bahnhofstrasse 1",
+    "zip": "6052",
+    "city": "Hergiswil NW",
+    "country": "CH"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/cojo-consulting-gmbh/"
+  ]
+}

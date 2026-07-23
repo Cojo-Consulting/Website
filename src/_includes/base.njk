@@ -3,13 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% set pageDescription = description or 'Cojo Consulting - Deine finanzielle Reise beginnt hier. Unabhängige Beratung zu Versicherungen, Vorsorge, Steuern und mehr.' %}
+  {% set canonicalUrl = site.url + page.url %}
+  {% set ogImageUrl = site.url + '/images/og-image.png' %}
   <title>{{ title }} | Cojo Consulting</title>
-  <meta name="description" content="{{ description or 'Cojo Consulting – Deine finanzielle Reise beginnt hier. Unabhängige Beratung zu Versicherungen, Vorsorge, Steuern und mehr.' }}">
+  <meta name="description" content="{{ pageDescription }}">
+  <link rel="canonical" href="{{ canonicalUrl }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cojo Consulting">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:title" content="{{ title }} | Cojo Consulting">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:url" content="{{ canonicalUrl }}">
+  <meta property="og:image" content="{{ ogImageUrl }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | Cojo Consulting">
+  <meta name="twitter:description" content="{{ pageDescription }}">
+  <meta name="twitter:image" content="{{ ogImageUrl }}">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&family=Lato:ital,wght@0,400;0,600;1,400&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/images/brand/element.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/images/brand/logo.svg",
+    "image": "{{ ogImageUrl }}",
+    "telephone": "{{ site.phone }}",
+    "email": "{{ site.email }}",
+    "description": "Unabhängige Versicherungsberatung, Finanzberatung und Vorsorgeberatung als ungebundener Vermittler für Privatpersonen und Unternehmen.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.address.street }}",
+      "postalCode": "{{ site.address.zip }}",
+      "addressLocality": "{{ site.address.city }}",
+      "addressCountry": "{{ site.address.country }}"
+    },
+    "areaServed": [
+      "Hergiswil NW",
+      "Nidwalden",
+      "Zentralschweiz",
+      "Mittelland",
+      "Seeland"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "sameAs": {{ site.sameAs | dump | safe }}
+  }
+  </script>
 </head>
 <body>
   {% include "header.njk" %}

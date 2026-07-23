@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Static website for cojo-consulting.ch, built with Eleventy.",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
