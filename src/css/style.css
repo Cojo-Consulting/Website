@@ -329,9 +329,8 @@ section.alt { background: var(--color-bg-alt); }
    Footer
 --------------------------------------------------------- */
 .site-footer {
-  background: var(--color-primary-dark);
+  background: var(--color-primary);
   color: rgba(255, 255, 255, 0.85);
-  margin-top: 4rem;
 }
 .site-footer a { color: rgba(255, 255, 255, 0.85); }
 .site-footer a:hover { color: var(--color-accent); }
