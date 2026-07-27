@@ -33,4 +33,14 @@
   } else {
     fadeEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
+
+  // Hide the Jotform loading spinner once the embedded form has loaded
+  var jotformFrame = document.querySelector(".jotform-frame");
+  var jotformIframe = jotformFrame && jotformFrame.querySelector("iframe");
+  var jotformLoader = jotformFrame && jotformFrame.querySelector(".jotform-loader");
+  if (jotformIframe && jotformLoader) {
+    jotformIframe.addEventListener("load", function () {
+      jotformLoader.style.display = "none";
+    });
+  }
 })();
