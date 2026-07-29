@@ -364,12 +364,12 @@ section.alt { background: var(--color-bg-alt); }
   padding-block: 3rem;
 }
 .site-footer__nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-.site-footer__contact p { margin: 0 0 0.4em; }
-.site-footer__contact p:first-child { margin-bottom: 1.2em; }
+.site-footer__contact p { margin: 0 0 0em; }
+.site-footer__contact p:first-child { margin-bottom: 1.5em; }
 .site-footer .icon-badge { width: 1em; height: 1em; }
 .site-footer .icon-badge svg,
 .site-footer .icon-badge img { width: 1em; height: 1em; }
-.social-link { display: inline-block; margin-top: 0.5em; }
+.social-link { display: inline-block; margin-top: 1.5em; }
 .site-footer__legal {
   display: flex;
   justify-content: space-between;
