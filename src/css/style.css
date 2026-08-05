@@ -7,6 +7,7 @@
   --color-primary: #264f55;
   --color-primary-dark: #1b3a3f;
   --color-accent: #9bc7b4;
+  --color-link: #81ac9a;/* #537d78 */;
   --color-bg: #ffffff;
   --color-bg-alt: #f8f8f8;
   --color-text: #333333;
@@ -35,8 +36,8 @@ body {
   line-height: 1.6;
 }
 img { max-width: 100%; display: block; }
-a { color: var(--color-primary); text-decoration: none; }
-a:hover { color: var(--color-accent); }
+a { color: var(--color-link); text-decoration: none; }
+a:hover { color: var(--color-primary); }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
@@ -359,17 +360,18 @@ section.alt { background: var(--color-bg-alt); }
 .site-footer a:hover { color: var(--color-accent); }
 .site-footer__inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding-block: 3rem;
 }
 .site-footer__nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
 .site-footer__contact p { margin: 0 0 0em; }
-.site-footer__contact p:first-child { margin-bottom: 1.5em; }
+.site-footer__contact p:last-child { margin-bottom: 0; }
+.site-footer__contact .icon-link { color: #fff; }
+.site-footer__contact .icon-link:hover { color: var(--color-accent); }
 .site-footer .icon-badge { width: 1em; height: 1em; }
 .site-footer .icon-badge svg,
 .site-footer .icon-badge img { width: 1em; height: 1em; }
-.social-link { display: inline-block; margin-top: 1.5em; }
 .site-footer__legal {
   display: flex;
   justify-content: space-between;
@@ -381,7 +383,10 @@ section.alt { background: var(--color-bg-alt); }
 }
 .site-footer__legal ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
 
-@media (max-width: 780px) {
+@media (max-width: 960px) {
+  .site-footer__inner { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
   .site-footer__inner { grid-template-columns: 1fr; }
 }
 
@@ -400,7 +405,7 @@ section.alt { background: var(--color-bg-alt); }
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  color: var(--color-text-muted);
+  color: var(--color-link);
   font-family: var(--font-body);
 }
 .icon-link:hover { color: var(--color-primary); }
