@@ -119,3 +119,21 @@ content pass on those specific sections.
 - `src/images/og-image.png` is the social-share preview image (placeholder, built from brand
   colors/logo — see git history for how it was generated with Playwright). Replace with real
   photography when available; keep it at 1200×630.
+
+## Content style
+
+**Never use a dash (hyphen-minus " - ", en dash "–", or em dash "—") as sentence-connector
+punctuation in visible page copy** — headings, body text, list items, alt text. Rewrite with a
+comma, colon, parentheses, a coordinating/subordinating conjunction ("und", "denn", "wenn", "ob"),
+or by reordering the sentence, whichever reads most naturally; prefer the option that keeps the
+result a single fluent sentence over one that just swaps the dash for other punctuation. Only use a
+dash where it's genuinely the standard, expected notation — and even then, only if there's no
+clean way to avoid it:
+
+- Grammatically legitimate German hyphens are unaffected — compound words ("Check-up") and elided
+  compounds ("Finanz- und Versicherungsfragen", "Hausrat-, Privathaftpflicht- und
+  Rechtsschutzversicherung"). These aren't "dashes" and should never be touched.
+- Swiss price shorthand ("CHF 150.-/Std.", "CHF 300.-") stays as-is.
+- Date/time ranges (e.g. the Kontakt page's "Mo–Fr 09:00 – 18:00") may keep an en dash.
+- Page `<title>`/meta-description separators in front matter (e.g. "Kontakt - Beratungstermin
+  vereinbaren") stay — this is a standard, expected SEO/UX convention.
