@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: Wissen - Schweizer Versicherungen & Vorsorge
+description: Fachinformationen zu Abredeversicherung, Berufsunfähigkeit, Reiseversicherung, Arbeitslosenversicherung, Altersvorsorge und Finanzplanung in der Schweiz.
+---
+
+<section class="hero hero--page">
+  <div class="hero__pattern" aria-hidden="true"></div>
+  <div class="container">
+    <h1>Wissen</h1>
+    <p>Fachinformationen zu Schweizer Versicherungen, Vorsorge und Finanzplanung. Hier findest Du Antworten auf häufige Fragen, damit Du die richtigen Entscheidungen treffen kannst.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-header" data-fade>
+      <h2>Themenübersicht</h2>
+      <p>Suche nach einem Stichwort oder wähle ein Thema, um mehr darüber zu erfahren.</p>
+    </div>
+
+    <div class="topic-search" hidden>
+      <label class="sr-only" for="topic-search-input">Themen durchsuchen</label>
+      <input id="topic-search-input" class="topic-search__input" type="search"
+             placeholder="Suche, z.B. Weltreise, arbeitslos, Unfall" autocomplete="off">
+      <p class="topic-search__status" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="grid topic-grid">
+      {% for article in collections.wissen %}
+      <a class="card topic-card" href="{{ article.url }}" data-fade
+         data-search="{{ article.data.heading or article.data.title }} {{ article.data.description }} {{ article.data.keywords | join(' ') }}">
+        <h3>{{ article.data.heading or article.data.title }}</h3>
+        <p>{{ article.data.description }}</p>
+        <span class="topic-card__more">Mehr erfahren &rarr;</span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <p class="topic-search__empty" hidden>
+      Zu dieser Suche gibt es noch keinen Beitrag. <a href="/kontakt/">Frag mich direkt</a>, ich helfe Dir gerne weiter.
+    </p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="cta" data-fade>
+      <h2>Interesse geweckt?</h2>
+      <p>Lass uns in einem unverbindlichen Gespräch Deine individuelle Situation besprechen und herausfinden, welche Absicherung für Dich sinnvoll ist.</p>
+      <a class="button" href="/kontakt/">Termin vereinbaren</a>
+    </div>
+  </div>
+</section>

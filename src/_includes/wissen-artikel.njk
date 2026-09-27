@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<section class="hero hero--page">
+  <div class="hero__pattern" aria-hidden="true"></div>
+  <div class="container">
+    <p class="hero__kicker"><a href="/wissen/">Wissen</a></p>
+    <h1>{{ heading or title }}</h1>
+    <p>{{ intro or description }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <article class="prose">
+      {{ content | safe }}
+    </article>
+    <p class="prose-back"><a href="/wissen/">&larr; Alle Themen</a></p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="cta" data-fade>
+      <h2>{{ ctaHeading or "Hast Du Fragen dazu?" }}</h2>
+      <p>{{ ctaText or "Lass uns in einem unverbindlichen Gespräch herausfinden, welche Absicherung für Dich sinnvoll ist." }}</p>
+      <a class="button" href="/kontakt/">Termin vereinbaren</a>
+    </div>
+  </div>
+</section>

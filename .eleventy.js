@@ -10,6 +10,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/downloads": "downloads" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
 
+  // Pages with `draft: true` are skipped entirely: no output, no collections, no sitemap.
+  eleventyConfig.addPreprocessor("drafts", "*", (data) => {
+    if (data.draft) return false;
+  });
+
+  // Wissen articles for the overview cards, sorted alphabetically by heading.
+  eleventyConfig.addCollection("wissen", (collectionApi) =>
+    collectionApi
+      .getFilteredByGlob("./src/wissen/*.md")
+      .sort((a, b) =>
+        (a.data.heading || a.data.title).localeCompare(b.data.heading || b.data.title, "de")
+      )
+  );
+
   return {
     dir: {
       input: "src",
