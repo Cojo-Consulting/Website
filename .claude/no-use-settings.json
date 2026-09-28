@@ -1,0 +1,23 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://localhost:11434",
+    "ANTHROPIC_AUTH_TOKEN": "ollama",
+    "ANTHROPIC_API_KEY": "",
+
+    "ANTHROPIC_MODEL": "qwen3.5:35b-a3b-coding-nvfp4",
+
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "qwen3.5:35b-a3b-coding-nvfp4",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "Qwen 3.5 35B Coding",
+
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "qwen3-coder:30b",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "Qwen 3 Coder 30B",
+
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "qwen3:8b",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "Qwen 3 8B",
+
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "gpt-oss:20b",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "GPT-OSS 20B",
+
+    "CLAUDE_CODE_SUBAGENT_MODEL": "qwen3-coder:30b"
+  }
+}
