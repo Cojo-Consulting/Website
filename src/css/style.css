@@ -420,6 +420,7 @@ section.alt { background: var(--color-bg-alt); }
 .icon-badge img,
 .icon-badge svg { width: 20px; height: 20px; }
 .icon-badge svg { stroke: var(--color-accent); }
+.icon-badge svg .icon-fill { fill: var(--color-accent); stroke: none; }
 .jotform-frame {
   position: relative;
   border: 1px solid var(--color-border);
