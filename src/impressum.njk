@@ -15,33 +15,49 @@ description: Impressum von Cojo Consulting.
 
     <h2>Anbieter</h2>
     <p>
-      Cojo Consulting GmbH<br>
-      Bahnhofstrasse 1<br>
-      6052 Hergiswil NW<br>
-      Schweiz
+      {{ site.name }}<br>
+      {{ site.address.street }}<br>
+      {{ site.address.zip }} {{ site.address.city }}<br>
+      {{ site.address.countryName }}
     </p>
 
     <p>
-      <strong>UID</strong> CHE-385.414.452<br>
-      <strong>FINMA-Nr.</strong> F01441247
+      <strong>UID</strong> {{ site.uid }}<br>
+      <strong>FINMA-Nr.</strong> {{ site.finma }}
     </p>
 
     <h2>Kontakt</h2>
     <p>
-      Telefon: <a href="tel:+41799356506">+41 79 935 65 06</a><br>
-      E-Mail: <a href="mailto:info@cojo-consulting.ch">info@cojo-consulting.ch</a>
+      Telefon: <a href="tel:+{{ site.phone | digits }}">{{ site.phone }}</a><br>
+      E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </p>
 
     <h2>Haftungsausschluss</h2>
     <p>
-      Wir geben uns Mühe, die Inhalte dieser Website sorgfältig zu prüfen und aktuell zu halten,
-      übernehmen jedoch keine Gewähr für deren Richtigkeit, Vollständigkeit oder Aktualität.
+      Die Inhalte dieser Website dienen der allgemeinen Information und werden mit
+      angemessener Sorgfalt erstellt. Die Cojo Consulting GmbH übernimmt jedoch keine
+      Gewähr für die Vollständigkeit, Richtigkeit oder Aktualität der bereitgestellten
+      Informationen.
     </p>
+
     <p>
-      Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
-      Einfluss haben. Wir bemühen uns, verlinkte Seiten aktuell und funktionsfähig zu halten,
-      können deren Inhalt jedoch nicht laufend kontrollieren und übernehmen dafür keine Haftung.
-      Für die Inhalte externer Links ist ausschliesslich deren jeweiliger Betreiber verantwortlich.
+      Die Inhalte der Website stellen keine individuelle Versicherungs-, Vorsorge-,
+      Finanz-, Steuer-, Rechts- oder Anlageberatung dar und ersetzen keine auf die
+      persönlichen Verhältnisse abgestimmte Beratung.
+    </p>
+
+    <p>
+      Soweit gesetzlich zulässig, übernimmt die Cojo Consulting GmbH keine Haftung für
+      Schäden, die aus der Nutzung oder Nichtverfügbarkeit dieser Website oder aus dem
+      Vertrauen auf die darauf bereitgestellten allgemeinen Informationen entstehen.
+      Zwingende gesetzliche Haftungsbestimmungen bleiben vorbehalten.
+    </p>
+
+    <p>
+      Diese Website kann Links zu Websites oder Diensten Dritter enthalten. Auf deren
+      Inhalte und Verfügbarkeit hat die Cojo Consulting GmbH keinen Einfluss und
+      übernimmt dafür, soweit gesetzlich zulässig, keine Verantwortung oder Haftung.
+      Für die Inhalte verlinkter Seiten sind die jeweiligen Betreiber verantwortlich.
     </p>
   </div>
 </section>

@@ -1,0 +1,252 @@
+---
+layout: base.njk
+title: Kundeninformation gemäss Art. 45 VAG
+description: Kundeninformation gemäss Art. 45 VAG der Cojo Consulting GmbH, ungebundener Vermittler für Versicherungen, mit Angaben zu Haftung, Entschädigung und Interessenkonflikten.
+---
+{% set finmaRegister = "https://www.finma.ch/de/bewilligung/versicherungsvermittlung/registersuche/" %}
+<section class="hero hero--page">
+  <div class="hero__pattern" aria-hidden="true"></div>
+  <div class="container">
+    <h1>Kundeninformation gemäss Art. 45 VAG</h1>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p><strong>Information für Kundinnen und Kunden über die Versicherungsvermittlung</strong></p>
+    <p>
+      Diese Kundeninformation informiert Sie gemäss Art. 45 des Bundesgesetzes betreffend die
+      Aufsicht über Versicherungsunternehmen (Versicherungsaufsichtsgesetz, VAG) über die
+      Tätigkeit der {{ site.name }} als Versicherungsvermittlerin.
+    </p>
+
+    <h2>1. Versicherungsvermittlerin</h2>
+    <p>
+      <strong>{{ site.name }}</strong><br>
+      {{ site.address.street }}<br>
+      {{ site.address.zip }} {{ site.address.city }}<br>
+      {{ site.address.countryName }}
+    </p>
+    <p>
+      Telefon: <a href="tel:+{{ site.phone | digits }}">{{ site.phone }}</a><br>
+      E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </p>
+    <p><strong>FINMA-Register:</strong> {{ site.finma }}</p>
+    <p>
+      Die {{ site.name }} ist als <strong>ungebundene Versicherungsvermittlerin</strong> tätig.
+    </p>
+    <p>
+      Ungebundene Versicherungsvermittlerinnen und Versicherungsvermittler stehen in einem
+      Treueverhältnis zu ihren Kundinnen und Kunden und nehmen deren Interessen wahr.
+    </p>
+    <p>
+      Die Eintragung kann im
+      <a href="{{ finmaRegister }}" target="_blank" rel="noopener noreferrer">öffentlichen Register der Eidgenössischen Finanzmarktaufsicht FINMA</a>
+      überprüft werden.
+    </p>
+
+    <h2>2. Art der Versicherungsvermittlung</h2>
+    <p>
+      Die {{ site.name }} ist als ungebundene Versicherungsvermittlerin tätig und nicht an ein
+      einzelnes Versicherungsunternehmen gebunden.
+    </p>
+    <p>
+      Im Rahmen unserer Tätigkeit beraten und begleiten wir Kundinnen und Kunden bei der Auswahl
+      und beim Abschluss von Versicherungslösungen unter Berücksichtigung ihrer individuellen
+      Bedürfnisse und Anforderungen.
+    </p>
+    <p>
+      Versicherungsverträge können entweder <strong>direkt durch die {{ site.name }}</strong> oder
+      in Zusammenarbeit mit bzw. über einen <strong>anderen ungebundenen Versicherungsvermittler
+      (Co-Broker)</strong> vermittelt werden.
+    </p>
+    <p>
+      Eine solche Zusammenarbeit kann insbesondere erfolgen, wenn für bestimmte
+      Versicherungsprodukte, Versicherungsunternehmen oder Fachbereiche ein anderer ungebundener
+      Versicherungsvermittler über entsprechende Zugänge, Vereinbarungen oder besondere
+      Fachkenntnisse verfügt.
+    </p>
+    <p>
+      Soweit ein anderer ungebundener Versicherungsvermittler in die Vermittlung einbezogen wird
+      und dies für die betreffende Geschäftsbeziehung relevant ist, informieren wir die Kundin
+      oder den Kunden über dessen Einbezug.
+    </p>
+    <p>
+      Die {{ site.name }} sowie gegebenenfalls beigezogene ungebundene Versicherungsvermittler
+      sind keine Versicherungsunternehmen. Der jeweilige Versicherungsvertrag kommt zwischen der
+      Kundin bzw. dem Kunden und dem betreffenden Versicherungsunternehmen zustande.
+    </p>
+
+    <h2>3. Aus- und Weiterbildung</h2>
+    <p>
+      Die für die Versicherungsvermittlung tätigen Personen verfügen über die für ihre Tätigkeit
+      erforderlichen Fähigkeiten und Kenntnisse und erfüllen die gesetzlichen und regulatorischen
+      Anforderungen an die Aus- und Weiterbildung von Versicherungsvermittlerinnen und
+      Versicherungsvermittlern.
+    </p>
+    <p>
+      Die mit der Versicherungsvermittlung betrauten Personen bilden sich im Rahmen der geltenden
+      Anforderungen regelmässig weiter.
+    </p>
+    <p>
+      Soweit eine Registrierung gesetzlich vorgeschrieben ist, sind die betreffenden Personen im
+      <a href="{{ finmaRegister }}" target="_blank" rel="noopener noreferrer">öffentlichen Register der FINMA</a>
+      eingetragen.
+    </p>
+
+    <h2>4. Haftung und Berufshaftpflichtversicherung</h2>
+    <p>
+      Für Nachlässigkeiten, Fehler oder unrichtige Auskünfte im Zusammenhang mit der
+      Versicherungsvermittlung kann im Rahmen der gesetzlichen und vertraglichen Bestimmungen die
+    </p>
+    <p>
+      <strong>{{ site.name }}</strong><br>
+      {{ site.address.street }}<br>
+      {{ site.address.zip }} {{ site.address.city }}<br>
+      {{ site.address.countryName }}
+    </p>
+    <p>haftbar gemacht werden.</p>
+    <p>
+      Die {{ site.name }} verfügt über eine Berufshaftpflichtversicherung gemäss den gesetzlichen
+      Vorgaben bei:
+    </p>
+    <p>
+      <strong>Liberty Mutual Insurance Europe SE</strong><br>
+      Zweigniederlassung Zürich<br>
+      Nüschelerstrasse 1<br>
+      8001 Zürich<br>
+      Schweiz
+    </p>
+    <p>
+      Haftungsfälle im Zusammenhang mit der Versicherungsvermittlung können der {{ site.name }}
+      unter <a href="mailto:{{ site.email }}"><strong>{{ site.email }}</strong></a> gemeldet werden.
+    </p>
+
+    <h2>5. Entschädigung der Versicherungsvermittlung</h2>
+    <p>
+      Die {{ site.name }} wird für ihre Tätigkeit insbesondere durch <strong>Abschluss- und
+      Erneuerungsprovisionen sowie Courtagen</strong> entschädigt. Diese Entschädigungen werden von
+      Versicherungsunternehmen, Co-Brokern, anderen ungebundenen Versicherungsvermittlern oder
+      sonstigen Dritten ausgerichtet und können je nach Versicherer, Produkt, Vertragsart und
+      -umfang variieren.
+    </p>
+    <p>Es gelten insbesondere folgende Bandbreiten bzw. Berechnungsgrundlagen:</p>
+    <p>
+      <strong>Krankenversicherung</strong><br>
+      Für die obligatorische Krankenpflegeversicherung (OKP) kann die Entschädigung bis zu
+      <strong>CHF&nbsp;70.00 pro Abschluss</strong> betragen. Bei Zusatzversicherungen kann die
+      Entschädigung bis zu <strong>16 Monatsprämien</strong> betragen.
+    </p>
+    <p>
+      <strong>Lebensversicherung</strong><br>
+      Bei Lebensversicherungen kann die Entschädigung bis zu <strong>5&nbsp;% der gewichteten
+      Produktionssumme</strong> betragen. Die gewichtete Produktionssumme berechnet sich
+      grundsätzlich anhand der Jahresprämie, der Vertragslaufzeit und des für das jeweilige Produkt
+      massgebenden Gewichtungsfaktors.
+    </p>
+    <p>
+      <strong>Nichtlebensversicherung</strong><br>
+      Bei Nichtlebensversicherungen können Abschluss- und Erneuerungsprovisionen bis zu
+      <strong>75&nbsp;% der Jahresprämie</strong> oder Courtagen bis zu <strong>15&nbsp;% der
+      Jahresprämie</strong> betragen.
+    </p>
+    <p>
+      Wird ein Versicherungsvertrag über einen Co-Broker oder einen anderen ungebundenen
+      Versicherungsvermittler vermittelt, kann die vom Versicherungsunternehmen ausgerichtete
+      Entschädigung zunächst an diesen Vermittler ausbezahlt und anschliessend ganz oder teilweise
+      an die {{ site.name }} weitergeleitet werden.
+    </p>
+    <p>
+      Die konkrete Entschädigung kann innerhalb der genannten Bandbreiten variieren. Soweit die
+      konkrete Höhe im Zeitpunkt der Information bereits feststeht, wird diese offengelegt. Ist sie
+      zu diesem Zeitpunkt noch nicht bestimmbar, dienen die vorstehenden Angaben als Information
+      über die massgebenden Berechnungsparameter und Bandbreiten.
+    </p>
+    <p>
+      Auf Anfrage legen wir Ihnen die konkrete Höhe der im Zusammenhang mit Ihrem
+      Versicherungsvertrag erhaltenen bzw. zu erwartenden Entschädigung transparent offen.
+    </p>
+    <p>
+      Soweit im Vermittlungsmandat vereinbart, erklärt sich die Kundin bzw. der Kunde damit
+      einverstanden, dass die {{ site.name }} die von Versicherungsunternehmen, Co-Brokern oder
+      anderen Dritten erhaltenen Entschädigungen zusätzlich zu einer allfällig vereinbarten
+      direkten Vergütung behalten darf. Ein allfälliger Verzicht der Kundin bzw. des Kunden auf die
+      Herausgabe solcher Entschädigungen wird ausdrücklich im Vermittlungsmandat vereinbart.
+    </p>
+    <p>
+      Sofern für bestimmte Dienstleistungen zusätzlich oder anstelle dieser Entschädigungen ein
+      direktes Honorar durch die Kundin oder den Kunden geschuldet ist, wird dieses vorgängig
+      separat vereinbart.
+    </p>
+
+    <h2>6. Interessenkonflikte</h2>
+    <p>
+      Die {{ site.name }} trifft angemessene organisatorische Vorkehrungen, um Interessenkonflikte
+      im Zusammenhang mit ihrer Versicherungsvermittlung möglichst zu vermeiden und eine
+      Benachteiligung ihrer Kundinnen und Kunden aufgrund von Interessenkonflikten auszuschliessen.
+    </p>
+    <p>
+      Interessenkonflikte können beispielsweise aufgrund unterschiedlicher Vergütungsmodelle von
+      Versicherungsunternehmen oder aufgrund der Zusammenarbeit mit anderen
+      Versicherungsvermittlern entstehen.
+    </p>
+    <p>
+      Die Auswahl einer Versicherungslösung soll nicht allein aufgrund der Höhe einer an die
+      {{ site.name }} oder einen beteiligten Vermittler ausgerichteten Entschädigung erfolgen.
+    </p>
+    <p>
+      Können Interessenkonflikte mit angemessenen organisatorischen Massnahmen nicht
+      ausgeschlossen werden, werden die betroffenen Kundinnen und Kunden vor Abschluss des
+      Versicherungsvertrags über den betreffenden Interessenkonflikt informiert.
+    </p>
+
+    <h2>7. Bearbeitung von Personendaten</h2>
+    <p>
+      Im Rahmen unserer Versicherungsvermittlung bearbeiten wir Personendaten, soweit dies für die
+      Beratung, Angebotseinholung, Vermittlung, Vertragsabwicklung und Betreuung unserer
+      Kundinnen und Kunden sowie zur Erfüllung gesetzlicher und regulatorischer Pflichten
+      erforderlich ist.
+    </p>
+    <p>
+      Je nach Versicherungsbereich können neben Stamm-, Kontakt-, Vertrags-, Finanz- und
+      Beratungsdaten auch besonders schützenswerte Personendaten, insbesondere Gesundheitsdaten,
+      bearbeitet werden.
+    </p>
+    <p>
+      Personendaten können im erforderlichen Umfang insbesondere an Versicherungsunternehmen,
+      Krankenkassen, Vorsorgeeinrichtungen sowie an beigezogene Co-Broker oder andere ungebundene
+      Versicherungsvermittler übermittelt werden. Soweit für unsere Tätigkeit erforderlich, können
+      zudem von uns eingesetzte IT-, Cloud-, CRM-, Kommunikations- und sonstige Dienstleister
+      Personendaten bearbeiten.
+    </p>
+    <p>
+      Personendaten werden so lange aufbewahrt, wie dies für die Durchführung und Dokumentation der
+      Beratung und Vermittlung, die Betreuung der Kundenbeziehung sowie zur Erfüllung gesetzlicher,
+      regulatorischer oder vertraglicher Pflichten erforderlich ist. Darüber hinaus können Daten
+      aufbewahrt werden, soweit dies zur Geltendmachung oder Abwehr von Rechtsansprüchen
+      erforderlich ist.
+    </p>
+    <p>
+      Weitere Informationen über die Bearbeitung Ihrer Personendaten, insbesondere zu den
+      eingesetzten Dienstleistern, Datenbearbeitungen im Ausland, Datensicherheit, Aufbewahrung
+      sowie Ihren Datenschutzrechten, finden Sie in unserer jeweils aktuellen
+      <a href="/datenschutzerklaerung/"><strong>Datenschutzerklärung</strong></a>.
+    </p>
+    <p>
+      Für Fragen zur Bearbeitung Ihrer Personendaten können Sie uns unter
+      <a href="mailto:{{ site.email }}"><strong>{{ site.email }}</strong></a> kontaktieren.
+    </p>
+
+    <h2>8. Übergabe dieser Kundeninformation</h2>
+    <p>
+      Diese Kundeninformation wird der Kundin oder dem Kunden in verständlicher Form <strong>vor
+      Abschluss eines Versicherungsvertrags</strong> zur Verfügung gestellt.
+    </p>
+    <p>
+      Bei wesentlichen Änderungen der hierin enthaltenen Informationen wird die Kundeninformation
+      entsprechend aktualisiert.
+    </p>
+
+    <p><strong>Stand: September 2026</strong></p>
+  </div>
+</section>
