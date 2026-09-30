@@ -106,8 +106,10 @@ content pass on those specific sections.
 ## Technical SEO conventions
 
 - `src/_data/site.json` is the single source of truth for the domain, NAP (name/address/phone),
-  and social links — used by `base.njk` for canonical URLs, Open Graph/Twitter tags, and the
-  JSON-LD block. Update it there, not inline in templates.
+  email, UID/FINMA-Nr., and LinkedIn/Threema links — used by `base.njk` (canonical URLs, Open
+  Graph/Twitter tags, JSON-LD) and by every visible contact block (footer, Kontakt, Impressum,
+  Datenschutzerklärung). Update it there, never inline in templates. For `tel:`/`wa.me` links use
+  the `digits` filter (`.eleventy.js`): `tel:+{{ site.phone | digits }}`.
 - Every page's front-matter `title`/`description` drives its `<title>` tag, meta description, and
   Open Graph/Twitter tags automatically (see `src/_includes/base.njk`) — always set both when
   adding a new page.

@@ -1,6 +1,9 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("currentYear", () => new Date().getFullYear());
 
+  // "+41 79 935 65 06" -> "41799356506", for tel: and wa.me links
+  eleventyConfig.addFilter("digits", (value) => String(value).replace(/\D/g, ""));
+
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/js": "js" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
