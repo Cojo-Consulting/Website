@@ -1,0 +1,17 @@
+{
+  "_comment": "Compound parts. In long words (12+ letters) a soft hyphen is inserted before each part, so the browser only breaks at these points. Lowercase; matched anywhere except at the start of a word. Longer parts win over shorter ones they contain.",
+  "minWordLength": 12,
+  "parts": [
+    "abwicklung", "anbieter", "anfrage", "aufbewahrung", "aufsicht", "auftrag", "auftritt", "ausschluss",
+    "ausweis", "bearbeit", "beauftragte", "bedingung", "behörde", "beratung", "bereich",
+    "beschränkung", "bestimmung", "beziehung", "branche", "daten", "dauer", "dienst",
+    "einholung", "einrichtung", "einstellung", "erfüllung", "erklärung", "faktor", "frage",
+    "frist", "führung", "garantie", "gebühr", "gesellschaft", "gesetz", "grundlage", "gruppe",
+    "haftpflicht", "information", "inhalt", "klausel", "konflikt", "konzept", "leistung",
+    "lösung", "mandat", "massnahme", "modell", "nachweis", "niederlassung", "partner",
+    "pflege", "pflicht", "police", "portfolio", "potenzial", "produkt", "provision", "prozess",
+    "rechtsschutz", "schutz", "sicherung", "situation", "tätigkeit", "übermittlung",
+    "übersicht", "unterlage", "unternehm", "unterstützung", "verfügbarkeit", "verlauf",
+    "vermittl", "versicherung", "vertrag", "verwaltung", "zusatz", "zweck"
+  ]
+}

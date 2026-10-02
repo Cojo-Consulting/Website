@@ -46,6 +46,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   margin: 0 0 0.6em;
   color: var(--color-primary);
+  /* last resort for long words; normal breaks come from soft hyphens (see .eleventy.js) */
+  overflow-wrap: break-word;
 }
 p { margin: 0 0 1em; }
 .sr-only {
@@ -388,6 +390,7 @@ section.alt { background: var(--color-bg-alt); }
 }
 @media (max-width: 600px) {
   .site-footer__inner { grid-template-columns: 1fr; }
+  body { overflow-wrap: break-word; }
 }
 
 /* ---------------------------------------------------------
@@ -426,6 +429,11 @@ section.alt { background: var(--color-bg-alt); }
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   overflow: hidden;
+}
+.form-note {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
 }
 .jotform-embed {
   display: block;
