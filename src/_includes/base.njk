@@ -33,7 +33,7 @@
   <link rel="dns-prefetch" href="https://form.jotform.com">
   <link rel="dns-prefetch" href="https://cdn.jotfor.ms">
   {% endif %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&family=Rokkitt:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300..800&family=Rokkitt:wght@400;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/images/brand/element.svg" type="image/svg+xml">
   <link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
@@ -75,8 +75,9 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
   {% include "header.njk" %}
-  <main>
+  <main id="inhalt" tabindex="-1">
     {{ content | safe }}
   </main>
   {% include "footer.njk" %}

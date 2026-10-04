@@ -6,13 +6,13 @@
     <nav class="site-nav" aria-label="Hauptnavigation">
       <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-list">
         <span></span><span></span><span></span>
-        <span class="sr-only">Menü öffnen</span>
+        <span class="sr-only" data-label-open="Menü öffnen" data-label-close="Menü schliessen">Menü öffnen</span>
       </button>
       <ul id="site-nav-list" class="site-nav__list">
-        <li><a href="/">Startseite</a></li>
-        <li><a href="/leistungen/">Leistungen</a></li>
-        <li><a href="/ueber-mich/">Über mich</a></li>
-        <li><a href="/kontakt/" class="button button--small">Kontakt</a></li>
+        <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Startseite</a></li>
+        <li><a href="/leistungen/"{% if page.url == "/leistungen/" %} aria-current="page"{% endif %}>Leistungen</a></li>
+        <li><a href="/ueber-mich/"{% if page.url == "/ueber-mich/" %} aria-current="page"{% endif %}>Über mich</a></li>
+        <li><a href="/kontakt/" class="button button--small"{% if page.url == "/kontakt/" %} aria-current="page"{% endif %}>Kontakt</a></li>
       </ul>
     </nav>
   </div>

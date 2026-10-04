@@ -9,9 +9,26 @@
   var toggle = document.querySelector(".site-nav__toggle");
   var navList = document.querySelector(".site-nav__list");
   if (toggle && navList) {
-    toggle.addEventListener("click", function () {
-      var isOpen = navList.classList.toggle("is-open");
+    var toggleLabel = toggle.querySelector(".sr-only");
+    var setOpen = function (isOpen) {
+      navList.classList.toggle("is-open", isOpen);
       toggle.setAttribute("aria-expanded", String(isOpen));
+      if (toggleLabel) {
+        toggleLabel.textContent = toggleLabel.getAttribute(isOpen ? "data-label-close" : "data-label-open");
+      }
+    };
+    toggle.addEventListener("click", function () {
+      setOpen(!navList.classList.contains("is-open"));
+    });
+    // Close after choosing a link (also covers same-page anchors)
+    navList.addEventListener("click", function (e) {
+      if (e.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && navList.classList.contains("is-open")) {
+        setOpen(false);
+        toggle.focus();
+      }
     });
   }
 
@@ -27,7 +44,8 @@
           }
         });
       },
-      { threshold: 0.15 }
+      // threshold 0 + bottom margin: fires for tall elements too (0.15 never did)
+      { threshold: 0, rootMargin: "0px 0px -10% 0px" }
     );
     fadeEls.forEach(function (el) { observer.observe(el); });
   } else {

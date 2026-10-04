@@ -6,7 +6,6 @@ description: Unabhängige Versicherungsberatung, Finanzberatung und Vorsorgebera
 <section class="hero">
   <div class="hero__pattern" aria-hidden="true"></div>
   <div class="container">
-    <p class="hero__kicker">Cojo Consulting</p>
     <h1>Deine finanzielle Reise beginnt hier</h1>
     <p>Als ungebundener Versicherungsvermittler vertrete ich Deine Interessen, nicht die einer Versicherung. Ich berate Privatpersonen und Unternehmen zu Versicherungen, Vorsorge und Steuern.</p>
     <div class="hero__actions">
@@ -18,7 +17,10 @@ description: Unabhängige Versicherungsberatung, Finanzberatung und Vorsorgebera
 
 <section>
   <div class="container about" data-fade>
-    <img src="/images/founder-portrait.png" alt="Portrait des Gründers von Cojo Consulting" width="320" height="400">
+    <picture>
+      <source srcset="/images/founder-portrait.webp" type="image/webp">
+      <img src="/images/founder-portrait.png" alt="Portrait des Gründers von Cojo Consulting" width="320" height="427" loading="lazy" decoding="async">
+    </picture>
     <div>
       <h2>Warum Cojo Consulting?</h2>
       <p>Bei Cojo Consulting steht die persönliche Beziehung im Zentrum. Ich nehme mir Zeit, Deine Situation wirklich zu verstehen und begleite Dich ehrlich und unabhängig, ob bei Versicherungen, Vorsorge oder den eigenen vier Wänden.</p>
@@ -29,9 +31,7 @@ description: Unabhängige Versicherungsberatung, Finanzberatung und Vorsorgebera
 
 <section class="alt">
   <div class="container">
-    <div class="section-header" data-fade>
-      <h2>Persönlich. Unabhängig. Nah.</h2>
-    </div>
+    <h2 class="sr-only">Persönlich. Unabhängig. Nah.</h2>
     <div class="grid">
       <div class="card" data-fade>
         <h3>Persönlich</h3>
@@ -56,16 +56,16 @@ description: Unabhängige Versicherungsberatung, Finanzberatung und Vorsorgebera
       <p>Individuelle und unabhängige Beratung für Privatpersonen und Geschäftskunden.</p>
     </div>
     <div class="grid">
-      <div class="card" data-fade>
+      <a class="card card--link" href="/leistungen/#privatperson" data-fade>
         <h3>Für Privatpersonen</h3>
         <p>Alles aus einer Hand: Gesundheit, Versicherungen, Steuern, Sparen, Eigenheim und Vorsorge.</p>
-        <a href="/leistungen/#privatperson">Mehr erfahren →</a>
-      </div>
-      <div class="card" data-fade>
+        <span class="card__more">Mehr erfahren</span>
+      </a>
+      <a class="card card--link" href="/leistungen/#geschaeftskunde" data-fade>
         <h3>Für Geschäftskunden</h3>
         <p>Professionelle Begleitung für Unternehmer: Neugründung, Check-ups und Schadenfälle.</p>
-        <a href="/leistungen/#geschaeftskunde">Mehr erfahren →</a>
-      </div>
+        <span class="card__more">Mehr erfahren</span>
+      </a>
     </div>
   </div>
 </section>

@@ -35,7 +35,12 @@ module.exports = function (eleventyConfig) {
     const body = content
       .slice(bodyStart)
       .replace(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<[^>]*>)|([^<]+)/g, (m, tag, text) =>
-        tag ? tag : text.replace(/[A-Za-zÄÖÜäöüß]+/g, hyphenateWord)
+        tag
+          ? tag
+          : text
+              .replace(/[A-Za-zÄÖÜäöüß]+/g, hyphenateWord)
+              // keep shortened compounds together ("und -vermittlung"): no break after the hyphen
+              .replace(/(^|\s)-(?=[A-Za-zÄÖÜäöüß])/g, "$1-⁠")
       );
     return head + body;
   });
